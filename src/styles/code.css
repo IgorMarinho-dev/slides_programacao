@@ -1,0 +1,23 @@
+@reference "./theme.css";
+
+.code-wrap {
+  @apply flex flex-col gap-3 self-start;
+}
+
+.code-card {
+  @apply m-0 overflow-x-auto rounded-2xl bg-code p-5 font-code text-base leading-relaxed text-slate-100 shadow-xl md:text-lg;
+}
+
+.code-out {
+  @apply m-0 rounded-2xl border-2 border-dashed border-brand bg-surface p-4 font-code text-base text-ink md:text-lg;
+}
+
+.code-out-label {
+  @apply mb-1 block font-body text-sm font-bold text-brand;
+}
+
+.tok-comment { @apply text-slate-400; }
+.tok-string { @apply text-emerald-300; }
+.tok-keyword { @apply font-bold text-rose-300; }
+.tok-number { @apply text-amber-300; }
+.tok-func { @apply text-sky-300; }

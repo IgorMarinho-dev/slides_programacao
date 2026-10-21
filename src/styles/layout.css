@@ -1,0 +1,35 @@
+@reference "./theme.css";
+
+.deck {
+  @apply relative h-screen w-screen overflow-hidden bg-paper;
+  background-image:
+    linear-gradient(var(--color-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--color-grid) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.controls {
+  @apply absolute inset-x-0 bottom-0 flex items-center gap-4 px-[6vw] pb-5;
+}
+
+.btn {
+  @apply rounded-full bg-ink px-5 py-2 font-semibold text-paper transition disabled:opacity-30;
+  @apply focus-visible:outline-4 focus-visible:outline-marker;
+}
+
+.progress {
+  @apply h-2 flex-1 overflow-hidden rounded-full bg-track;
+}
+
+.progress-bar {
+  @apply h-full bg-marker;
+}
+
+.counter {
+  @apply text-sm font-bold text-ink;
+}
+
+.theme-toggle {
+  @apply absolute right-5 top-5 z-10 grid size-11 place-items-center rounded-full bg-surface text-ink shadow-md;
+  @apply focus-visible:outline-4 focus-visible:outline-marker;
+}

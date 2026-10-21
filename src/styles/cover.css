@@ -1,0 +1,21 @@
+@reference "./theme.css";
+
+.cover {
+  @apply flex h-full flex-col justify-center gap-8 px-[8vw];
+}
+
+.cover-tag {
+  @apply w-fit rounded-2xl bg-code px-6 py-3 font-code text-2xl text-amber-300 shadow-lg md:text-4xl;
+}
+
+.cover-title {
+  @apply font-display text-5xl font-extrabold leading-[1.05] text-ink md:text-7xl;
+}
+
+.cover-sub {
+  @apply mt-4 max-w-2xl text-xl text-muted md:text-2xl;
+}
+
+.cover-teachers {
+  @apply text-lg font-semibold text-brand md:text-xl;
+}
