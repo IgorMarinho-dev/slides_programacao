@@ -17,7 +17,7 @@ export default function App() {
       <AnimatePresence mode="wait" custom={dir}>
         <motion.main
           key={index}
-          className="h-full"
+          className="slide-frame"
           initial={{ opacity: 0, x: dir * 60 }}
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: dir * -60 }}

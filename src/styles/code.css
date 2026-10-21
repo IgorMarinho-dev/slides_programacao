@@ -1,15 +1,15 @@
 @reference "./theme.css";
 
 .code-wrap {
-  @apply flex flex-col gap-3 self-start;
+  @apply flex w-full min-w-0 max-w-full flex-col gap-3 self-start;
 }
 
 .code-card {
-  @apply m-0 overflow-x-auto rounded-2xl bg-code p-5 font-code text-base leading-relaxed text-slate-100 shadow-xl md:text-lg;
+  @apply m-0 max-w-full overflow-x-auto rounded-2xl bg-code p-3 font-code text-[0.8rem] leading-relaxed text-slate-100 shadow-xl sm:p-5 sm:text-base md:text-lg;
 }
 
 .code-out {
-  @apply m-0 rounded-2xl border-2 border-dashed border-brand bg-surface p-4 font-code text-base text-ink md:text-lg;
+  @apply m-0 max-w-full overflow-x-auto rounded-2xl border-2 border-dashed border-brand bg-surface p-3 font-code text-[0.8rem] text-ink sm:p-4 sm:text-base md:text-lg;
 }
 
 .code-out-label {

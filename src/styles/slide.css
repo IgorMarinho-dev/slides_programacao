@@ -1,19 +1,21 @@
 @reference "./theme.css";
 
 .slide {
-  @apply flex h-full flex-col gap-6 px-[6vw] pb-24 pt-[7vh];
+  @apply flex h-full flex-col gap-4 overflow-y-auto overflow-x-hidden px-[5vw] sm:gap-6 sm:px-[6vw];
+  padding-top: max(4.5rem, env(safe-area-inset-top));
+  padding-bottom: max(7.5rem, calc(env(safe-area-inset-bottom) + 6.5rem));
 }
 
 .slide-title {
-  @apply font-display text-3xl font-extrabold text-ink md:text-5xl;
+  @apply pr-12 font-display text-2xl font-extrabold text-ink sm:text-3xl md:text-5xl;
 }
 
 .slide-sub {
-  @apply mt-2 text-lg text-muted md:text-xl;
+  @apply mt-2 text-base text-muted sm:text-lg md:text-xl;
 }
 
 .slide-body {
-  @apply grid min-h-0 flex-1 gap-8;
+  @apply grid min-h-0 min-w-0 flex-1 gap-5 sm:gap-8;
 }
 
 .slide-body--split {
@@ -21,7 +23,7 @@
 }
 
 .points {
-  @apply flex flex-col gap-4 text-lg text-ink md:text-xl;
+  @apply flex min-w-0 flex-col gap-3 text-base text-ink sm:gap-4 sm:text-lg md:text-xl;
 }
 
 .points--grid {
@@ -29,7 +31,7 @@
 }
 
 .point {
-  @apply rounded-xl border-l-4 border-brand bg-surface/80 px-4 py-3;
+  @apply break-words rounded-xl border-l-4 border-brand bg-surface/80 px-3 py-2.5 sm:px-4 sm:py-3;
 }
 
 .point--exercise {

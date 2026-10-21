@@ -5,12 +5,12 @@ type Props = { index: number; total: number; onPrev: () => void; onNext: () => v
 export default function Controls({ index, total, onPrev, onNext }: Props) {
   return (
     <footer className="controls">
-      <button className="btn" disabled={index === 0} onClick={onPrev}>Anterior</button>
+      <button className="btn btn-prev" disabled={index === 0} onClick={onPrev}>Anterior</button>
       <div className="progress">
         <motion.div className="progress-bar" animate={{ width: `${((index + 1) / total) * 100}%` }} />
       </div>
       <span className="counter">{index + 1} / {total}</span>
-      <button className="btn" disabled={index === total - 1} onClick={onNext}>Próximo</button>
+      <button className="btn btn-next" disabled={index === total - 1} onClick={onNext}>Próximo</button>
     </footer>
   );
 }
